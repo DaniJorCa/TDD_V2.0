@@ -26,6 +26,14 @@ public class test_Coche_Daniel_Jordan {
 		nuevoCoche.decelerar(20);
 		Assert.assertEquals(30,nuevoCoche.velocidad);
 	}
+	@Test 
+	
+	public void test_al_decelerar_un_coche_su_velocidad_no_puede_ser_menor_a_cero_Daniel_Jordan() {
+		Coche nuevoCoche = new Coche();
+		nuevoCoche.velocidad = 50;
+		nuevoCoche.decelerar(80);
+		Assert.assertEquals(0,nuevoCoche.velocidad);
+	}
 	
 
 }
